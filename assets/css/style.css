@@ -215,3 +215,61 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+@media screen and (min-width: 980px) {
+  nav {
+    position: relative;
+    left:0px;
+  } 
+.main-section , #logo{
+  position: relative;
+    left:-20px;
+  }
+  .main-section {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 738px){
+  nav {
+    position: relative;
+    left:-24px;
+  } 
+  .auth-image {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 640px){
+  header {
+    position: static;
+  }
+  #logo {
+    width: 100%;
+  }
+  nav {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px; 
+  margin-bottom: 10px;
+}
+.auth-image {
+  float: none;
+  width: 100%;
+}
+.work {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#the-one {
+  list-style-type: none;
+}
+label,
+input[type=text],
+input[type=email],
+textarea {
+  margin-left:-50px;
+}
+}
