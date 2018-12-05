@@ -5,80 +5,108 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <!-- bootstrap cdn -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- local css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- jQuery cdn -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
+  <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+
+  <!-- Google Font Links-->
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet">
+
 </head>
 
 <body>
   <header id="masthead">
     <div class="container">
       <a href="index.html" id="logo">Saba Borjian</a>
-      <nav clas="scrollmenu">
-        <a href="#main-container">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
+      <nav>
+        <a class="navigate" href="#main-container">About</a>
+        <a class="navigate" href="#portfolio">Portfolio</a>
+        <a class="navigate" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <div id="main-container" class="container" >
+  <div id="main-container" class="container">
     <section class="main-section">
       <h1>About Me</h1>
 
-      <img src="assets/images/cat.jpg" class="auth-image" alt="Your Name">
+      <img src="assets/images/saba.jpg" class="auth-image" alt="Your Name">
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum luctus felis, ac rhoncus nunc porttitor condimentum. Mauris sit amet dolor eu elit varius varius facilisis id arcu. Proin vel dui massa. Nunc rhoncus fringilla pharetra. Vestibulum bibendum consectetur euismod. Proin commodo purus vitae sollicitudin consectetur.</p>
+      <p>I am a Full Stack Software Engineer. Due to my past experience on both operation side (as a Support Engineer) and development side as an (Automation Test Engineer), I push myself to create a code which is easy to maintain and scale and does not make regression in the project.
+         I am a self-initiating, hardworking, with excellent people skills and entrepreneurial mindset.</p>
 
-      <p>Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices, ultrices neque non, pretium odio. Nunc id eros iaculis, pulvinar quam eget, egestas mauris.</p>
+      <p><h5>Technologies I have worked with:</h5>Technologies I have worked with: Node.js,HTML/CSS ,Cucumber, ECMAScript 6, SQL Database, MongoDB, Protractor test framework, Gherkin Syntax
+        , Git, Docker, Kubernetes, Selenium, Postman, Artillery, Grunt, Chai, Linux, JSON, TIBCO EMS, 
+         ActiveMQ, Splunk, AppDynamics, JIRA, Bamboo, Confluence</p>
 
-      <p>Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt nunc, sit amet egestas nibh tortor et mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      <p>Feel free to review my resume <a href="https://docs.google.com/document/d/1G2suMMf1vONFzu239BCLOSak2lgaiYB1DhA7puoapOo/edit?usp=sharing">here.</a></p>
     </section>
 
     <section class="main-section" id="portfolio">
-      <h1>Portfolio</h1>
-
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-1.jpg" alt="Word Guess">
-
-        <h3>Word Guess</h3>
+      <div class="row">
+        <div class="col-12">
+          <h1>Portfolio</h1>
+        </div>
       </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">
-
-        <h3>RPG Game</h3>
+      <div class="row" id="first-row">
+        <div class="col-sm-6" id="firstImg">
+            <div class="contain-portfolio-image">
+              <img src="assets/images/Hive.png" alt="Hive" class="img-fluid portfolioImg">
+              <h3 class="portfolioText">Hive The Wellcoming Application</h3>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="contain-portfolio-image">
+            <img src="assets/images/Trivia.png" alt="Trivia Game"  class="img-fluid portfolioImg">
+            <h3 class="portfolioText">Trivia Game</h3>
+        </div>
+        </div>
       </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
+      <br>
 
-        <h3>Trivia Game</h3>
+      <div class="row">
+        <div class="col-sm-6" id="secondImg">
+            <div class="contain-portfolio-image">
+            <img src="assets/images/TrainSchedule.png" alt="TrainSchedule"  class="img-fluid portfolioImg">
+            <h3 class="portfolioText">Train Schedule</h3>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="contain-portfolio-image">
+            <img src="assets/images/calculator.png" alt="Calculator"  class="img-fluid portfolioImg">
+            <h3 class="portfolioText">Calculator</h3>
+            </div>
+        </div>
       </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
-
-        <h3>Rutgers Info Widget</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
-
-        <h3>Rock Paper Scissors</h3>
-  </section>
+      <br>
+    </section>
 
     <section class="main-section" id="contact">
-      <h1>Contact</h1>
+      <h4>Contact</h4>
+      <h3 id="question">Have a question or want to work together?</h3>
 
       <form id="contact-form">
         <ul id="the-one">
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
+            <label for="name">* Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required="required">
+            <label for="email">* Email</label>
             <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
             <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
+            <textarea id="message" name="message" ></textarea>
         </ul>
         <input type="submit">
       </form>
@@ -88,11 +116,9 @@
   </div>
   </div>
   <footer>
-    <div class="container">
-      Copyright &copy; 
-    </div>
+    Copyright &copy;
   </footer>
-  <script src="./assets/app.js"></script>
+  <script src="assets/app.js"></script>
 </body>
 
 </html>

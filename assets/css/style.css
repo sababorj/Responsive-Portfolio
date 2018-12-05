@@ -2,8 +2,8 @@ body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   line-height: 34px;
-  color: #777777;
-  background: url("../images/concrete_seamless.png");
+  color: black;
+  background-color: black;
 }
 
 * {
@@ -19,7 +19,8 @@ body {
 }
 
 p {
-  margin-bottom: 50px;
+  margin-bottom: 15px;
+  line-height: 34px;
 }
 
 p:last-child {
@@ -32,7 +33,7 @@ h3 {
   margin-bottom: 20px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
-  color: #4aaaa5;
+  color: darkorange;
 }
 
 h1 {
@@ -46,6 +47,19 @@ h2,
 h3 {
   font-size: 22px;
 }
+h4 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  color: darkorange;
+}
+h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: darkorange
+
+}
 
 /* header */
 
@@ -53,50 +67,53 @@ h3 {
   position: fixed;
   z-index: 99;
   width: 100%;
+  height: 45px;
   margin: 0 0 5px;
   overflow: auto;
   color: #ffffff;
-  background: #ffffff;
-  border-bottom: 2px solid #cccccc;
+  background: gainsboro;;
+  border-bottom: 0.01px solid darkorange;
 }
 
 #logo {
+  text-transform: uppercase;
   float: left;
   width: 250px;
-  height:59px;
+  height:45px;
   font-size: 18px;
-  font-weight: 700;
-  padding-top: 13px;
-  color: #ffffff;
+  padding-top: 5px;
+  color: white;
   text-align: center;
   text-decoration: none;
-  background: #4aaaa5;
+  background: darkorange;
 }
 
 nav {
   float: right;
   padding-top: 13px;
+  line-height: 0;
   transition: all .3s ease-in-out;
 }
 
 nav a {
-  transition: color .5s ease-in-out;
   text-transform: uppercase;
   display: inline-block;
   padding-left: 15px;
   margin-left: 0;
   line-height: 18px;
-  color: #999;
+  color: black;
   text-decoration: none;
-  border-left: 1px solid #efefef;
+  border-left: 0.02px solid grey;
 }
 
 nav a:first-child {
   border-left: 0 none;
 }
- #contact, #portfolio{
-   margin-top: 15px;
- }
+
+br {
+  width: 70%;
+  border-bottom: 2px solid darkorange;
+}
 /* footer */
 
 footer {
@@ -107,7 +124,7 @@ footer {
   color: #cccccc;
   text-align: center;
   background: #666666;
-  border-top: 8px solid #4aaaa5;
+  border-top: 8px solid darkorange;
   height: 50px;
 }
 
@@ -118,10 +135,10 @@ h3, h2 {
   border-bottom: 2px solid #eeeeee;
 }
 
-/* main */
+/* about */
 
 #main-container {
-  padding-top: 80px;
+  padding-top: 50px;
   min-height: calc(100vh - 70px);
 }
 
@@ -130,31 +147,13 @@ h3, h2 {
   width: 100%;
   max-width: 960px;
   padding: 30px;
-  background: #ffffff;
+  background: gainsboro;
   border: 1px solid #dddddd;
 }
 
-/* portfolio page */
+/* portfolio */
 
-.work {
-  position: relative;
-  float: left;
-  width: 274px;
-  margin: 20px 0 25px;
-  overflow: auto;
-}
-
-.work:nth-child(even) {
-  margin-right: 40px;
-}
-
-.work img {
-  width: 100%;
-  border: 0 none;
-  opacity: 0.8;
-}
-
-.work h3 {
+.portfolioText {
   position: absolute;
   bottom: 20px;
   width: 100%;
@@ -164,26 +163,25 @@ h3, h2 {
   line-height: 30px;
   color: #ffffff;
   text-align: center;
-  background: #4aaaa5;
+  background: darkorange;
   border-bottom: 0;
+}
+.contain-portfolio-image {
+  position: relative;
 }
 
 .auth-image {
   float: left;
-  width: 200px;
+  width: 280px;
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
 }
 
-/* contact page */
+/* contact */
 
 #contact-form ul {
-  margin-bottom: 20px;
-}
-
-#contact-form li {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 label,
@@ -212,62 +210,32 @@ input[type=submit] {
   font-size: 18px;
   color: #ffffff;
   cursor: pointer;
-  background: #4aaaa5;
+  background: darkorange;
   border: 0 none;
 }
-@media screen and (min-width: 980px) {
-  nav {
-    position: relative;
-    left:0px;
-  } 
-.main-section , #logo{
-  position: relative;
-    left:-20px;
-  }
-}
 
-@media screen and (min-width: 738px){
-  nav {
-    position: relative;
-    left:-24px;
-  } 
-  .auth-image {
-    width: 50%;
-  }
+#question{
+  color: black;
 }
 
 @media screen and (max-width: 640px){
-  header {
-    position: static;
+  #masthead{
+    width: 100%;
+    height: 85px;
   }
   #logo {
-    width: 100%;
+   width: 100%;
   }
   nav {
-  width: 100%;
-  text-align: center;
-  margin-top: 10px; 
-  margin-bottom: 10px;
+ width: 100%;
+ border-block-end: 2px solid darkorange;
+ padding-bottom: 7px
+  }
+  .main-section {
+    padding-top : 90px;
+  }
+#firstImg, #secondImg {
+margin-bottom: 30px;
+height: auto;
 }
-.auth-image {
-  float: none;
-  width: 100%;
-}
-.work {
-  position: relative;
-  float: left;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-#the-one {
-  list-style-type: none;
-}
-label,
-input[type=text],
-input[type=email],
-textarea {
-  margin-left:-50px;
-}
-
 }
