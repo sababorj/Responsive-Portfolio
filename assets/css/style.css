@@ -151,6 +151,7 @@ h3, h2 {
 #main-container {
   padding-top: 50px;
   min-height: calc(100vh - 70px);
+  width: 100%;
 }
 
 .main-section {
@@ -225,7 +226,7 @@ input[type=submit] {
   border: 0 none;
 }
 
-#question{
+.notTitle{
   color: black;
 }
 
